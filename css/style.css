@@ -1,0 +1,121 @@
+.message-bg{
+    width:100%;
+    height:550px;
+    background-image:url('../images/hut.jpg');
+    background-size:cover;
+    background-position:bottom;
+    position:relative;
+}
+
+.message-box{
+    background-color:#fff;
+    height:350px;
+    width:300px;
+    padding:20px;
+    position:absolute;
+    bottom:0px;
+    right:150px;
+}
+.message-box h2{
+    font-family:'Open Sans',sans-serif;
+    font-size:24px;
+}
+.input-msg{
+    width:100%;
+    font-family:'Lato',sans-serif;
+    font-size:18px;
+    margin:10px 0px;
+    box-sizing:border-box;
+    color:#555;
+    border:none;
+    border-bottom:2px solid #555
+}
+.message-box  {
+
+}
+footer{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    color:#fff;
+    background-color:#171d1c;
+    padding:50px 150px;
+    font-family:'Lato', sans-serif;
+    box-sizing:border-box;
+    text-shadow:2px 2px #000;
+}
+footer ul{
+    list-style:none;
+    padding:0px 20px 0px 0px;
+    margin:0px;
+/*     flex-shrink:0; */
+}
+footer li{
+}
+footer a{
+    text-decoration:none;
+    color:#fff;
+    padding:5px 0px;
+    transition:all 0.3s;
+}
+footer a:hover{
+    color:#20aaaa;
+}
+.grow{
+    flex-grow:1;
+}
+footer p{
+    text-align:right;
+    flex-shrink:0;
+    margin-top:60px;
+}
+
+@media(max-width:1024px){
+    .message-box{
+        right:100px;
+    }
+    footer{
+        flex-wrap:wrap;
+    }
+    footer p{
+        text-align:left;
+    }
+}
+
+@media(max-width:768px){
+    .message-bg{
+        height:450px;
+        width:100%;
+    }
+    .message-box{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer{
+        flex-direction:column;
+        justify-content:normal;
+        padding:10px;
+    }
+    footer ul{
+        padding:0px 0px 20px;
+        width:100%;
+        margin:auto;
+        text-align:center;
+        font-size:32px;
+        border-bottom:1px solid #fff;
+    }
+    footer p{
+        text-align:center;
+        font-size:32px;
+    }
+    footer a{
+        display:block;
+    	width:100%;
+    }
+    footer a:hover{
+        color:#fff;
+        width:100%;
+    	background-color:#20aaaa;
+    }
+
+}
