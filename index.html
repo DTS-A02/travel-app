@@ -6,9 +6,137 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <title>Travel App</title>
+  <style type="text/css">
+  	*{
+  		margin:0;
+  		padding: 0;
+  	}
+  	nav {
+  		position:fixed;
+  		background: white;
+  		width: 100%;
+  	}
+  	nav ul {
+  		list-style: none;
+  	}
+  	nav ul li {
+  		padding: 20px 0;
+  		display: inline-block;
+  		width:19%;
+  		text-align: center;
+  	}
+  	nav ul li a {
+  		text-transform: uppercase;
+  		padding:20px 0;
+  		color: black;
+  		text-decoration: none;
+  	}
+  	nav header {
+  		font-size: 1.5rem;
+  	}
+  	.container {
+  		width: 80%;
+  		margin:0 auto;
+  	}
+  	#main {
+  		height: 100vh;
+  		background-image:url('images/bg.png');
+  		background-size: cover;
+  		background-repeat: no-repeat;
+  	}
+  	.main-content {
+  		padding:200px 0;
+  	}
+  	.main-content h1 {
+  		font-size: 3rem;
+  		text-transform: uppercase;
+  		text-align: center;
+  		color: white;
+  	}
+  	.search-widget {
+  		background: white;
+  		display: flex;
+  	}
+  	.search-item {
+  		width: 23%;
+  	}
+  	.search-btn-item{
+  		width: 8%;
+  	}
+  	.search-item div, .search-btn-item div {
+  		padding: 20px;
+  	}
+  	.search-item input, .search-item select {
+  		width: 100%;
+  		padding: 10px;
+  		border:0;
+  		border-bottom: 1px solid #ccc;
+  	}
+  	.search-btn-item button {
+  		border: 0;
+  		background: #F31131;
+  		height: 40px;
+  		width: 40px;
+  		border-radius: 50%;
+  	}
+  </style>
 </head>
 <body>
-  <header></header>
-  <div id="main"></div>
+  <nav>
+  	<ul class="menu">
+  		<li><a href="#">Home</a></li>
+  		<li><a href="#">Experiences</a></li>
+  		<li><header><a href="#">Private Holidays</a></header></li>
+  		<li><a href="#">Questions</a></li>
+  		<li><a href="#">Contact</a></li>
+  	</ul>
+  </nav>
+  <div id="main">
+  	<div class="main-content container">
+  		<h1>Enjoy Freedom Land</h1>
+  	</div>
+  	<div class="container">
+  		<div class="search-widget">
+  			<div class="search-item">
+  				<div>
+  					<select>
+  						<option>Mauritius</option>
+  					</select>
+  				</div>
+  				
+  			</div>
+  			<div class="search-item">
+  				<div>
+  					<input type="date">
+  				</div>
+  				
+  			</div>
+  			<div class="search-item">
+  				<div>
+  					<input type="date">
+  				</div>
+  			</div>
+  			<div class="search-item">
+  				<div>
+  					<select>
+  						<option>5 Bedrooms</option>
+  					</select>
+  				</div>
+  				
+  			</div>
+  			<div class="search-btn-item">
+  				<div>
+  					<button>
+  						<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" fill="white" width="18px" height="18px"><rect fill="none" height="24" width="24"/><path d="M15,5l-1.41,1.41L18.17,11H2V13h16.17l-4.59,4.59L15,19l7-7L15,5z"/></svg>
+  					</button>
+  				</div>
+  				
+  			</div>
+  		</div>
+  	</div>
+  </div>
+  <div style="height: 1000px">
+  	
+  </div>
 </body>
 </html>
