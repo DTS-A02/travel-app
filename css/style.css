@@ -55,7 +55,8 @@ a {
 }
 
 .idea-image img {
-	width: 360px;
+	width: 100%;
+	max-width: 360px;
 	height: 300px;
 	object-fit: cover;
 }
@@ -67,6 +68,7 @@ a {
 	position: absolute;
 	top: 55%;
 	width: 80%;
+	height: auto;
 	color: rgba(12, 11, 11, 0.9);
 	padding: 10px 20px 10px 20px;
 	background-color: white;
@@ -92,8 +94,13 @@ a {
 	}
 	.txt-shape {
 		width: 32%;
+		height: auto;
 		left: 34%;
 	}
+	/* .idea-image img {
+		width: 50%;
+		height: auto;
+	} */
 }
 
 @media all and (max-width: 670px) {
