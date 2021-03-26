@@ -1,3 +1,4 @@
+
 *{
 	margin:0;
 	padding: 0;
@@ -254,7 +255,7 @@ a {
 .ideas-wrapper {
 	text-align: center;
 	background-color: #ecf0f1;
-	padding: 100px 0 600px 0;
+	padding: 100px 0 400px 0;
 	height: auto;
 }
 .container-christo {
@@ -352,3 +353,131 @@ a {
 	}
 }
 
+
+.title {
+  font-family: 'Open Sans';
+  font-weight: 500;
+  text-align: center;
+}
+
+.container-satriko {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 550px;
+  height: 250px;
+  margin: 20px;
+  background-color: white;
+  padding-right: 10px;
+  border-radius: 20px;
+	
+}
+
+.photo {
+  float: left;
+  width: 50%;
+}
+
+.photo img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 250px;
+  height: 250px;
+}
+
+.info h2 {
+  margin-top: 15px;
+  margin-bottom: 0;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+.info p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.list li {
+	margin-top: 10px;
+  float: left;
+  list-style: none;
+  padding-right: 25px;
+}
+
+.button {
+	margin-top: 50px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 1px;
+  background:	#f31131;
+  border-radius: 100px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover { 
+  background: #B22222;
+}
+
+/* Active state animation applied here */
+.button:active {
+  -webkit-animation: active 1200ms ease 1 alternate;
+  animation: active 1200ms ease 1 alternate; 
+  background: #f31131;
+}
+
+
+@media only screen and (max-device-width : 480px) {
+  .item {
+    width: 80%;
+    height: 110%;
+    background-color: white;
+    border-radius: 20px;
+    margin: 0;
+    padding: 0px;
+    margin-top: 10px;
+  }
+
+  .info ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .photo {
+    width: 100%;
+  }
+  
+  .photo img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 100%;
+  }
+
+  .info h2 {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    text-align: center;
+  }
+
+  .info p {
+    text-align: center;
+  }
+
+  .center-button {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
