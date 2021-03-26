@@ -1,0 +1,13 @@
+/* Untuk Tablet */
+@media all and (max-width: 1000px) {
+    .reason {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+}
+    /* Untuk Smartphone */
+@media all and (max-width: 480px) {
+    .reason {
+      width: 100%;
+    }
+} 
