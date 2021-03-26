@@ -16,6 +16,7 @@ nav {
 	position:fixed;
 	background: white;
 	width: 100%;
+	z-index: 999;
 }
 nav ul {
 	list-style: none;
@@ -308,15 +309,17 @@ a {
 	padding: 10px 20px 10px 20px;
 	background-color: white;
 	left: 10%;
+
 }
 
 .txt-shape p {
-	font-size: 20px;
+	font-size: 16px;
 	font-family: 'Lato', sans-serif;
 	font-weight: 700;
 	border: 1px solid rgba(12, 11, 11, 0.6);
 	/* border-width: 0%; */
 	padding: 15px 15px 15px 15px;
+	text-align: center;
 }
 
 @media all and (max-width: 1000px) {
@@ -340,7 +343,7 @@ a {
 
 @media all and (max-width: 670px) {
 	.ideas-wrapper {
-		padding: 100px 0 1200px 0;
+		padding: 100px 0 1100px 0;
 	}
 	.idea {
 		width: 100%;
@@ -371,7 +374,7 @@ a {
   margin: 20px;
   background-color: white;
   padding-right: 10px;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 	
 }
 
@@ -381,8 +384,8 @@ a {
 }
 
 .photo img {
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  /* border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px; */
   width: 250px;
   height: 250px;
 }
@@ -437,7 +440,7 @@ a {
     width: 80%;
     height: 110%;
     background-color: white;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     margin: 0;
     padding: 0px;
     margin-top: 10px;
@@ -456,10 +459,10 @@ a {
   }
   
   .photo img {
-    border-top-left-radius: 20px;
+    /* border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px; */
     width: 100%;
   }
 
@@ -493,10 +496,13 @@ a {
     background-color: #ecf0f1;
     padding: 40px 0;
     text-align: center;
+		margin-top: 90px;
 }
 
 .reason-heading h2{
     font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
+		font-size: 32px;
 }
 
 .title-separator {
@@ -524,4 +530,168 @@ a {
 .reason-txt {
     width: 80%;
     display: inline-block;
+}
+.message-bg{
+    width:100%;
+    height: 600px;
+    background-image:url('../images/hut.jpg');
+    background-size:cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position:relative;
+    object-fit: cover;
+}
+
+.message-box{
+    background-color:#fff;
+    height: 400px;
+    width: 300px;
+    padding: 15px 40px;
+    position:absolute;
+    bottom:0px;
+    right:98px;
+}
+.message-box h2{
+    font-family:'Open Sans',sans-serif;
+    font-size:24px;
+}
+.input-msg{
+    width:100%;
+    font-family:'Lato',sans-serif;
+    font-size:18px;
+    margin: 15px 0px;
+    box-sizing:border-box;
+    color:#555;
+    border:none;
+    border-bottom:2px solid #555;
+}
+.message-box .button{
+    position:absolute;
+    bottom:40px;
+    left:40px;
+}
+footer{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    color:#fff;
+    background-color:#171d1c;
+    padding:30px 98px;
+    font-family:'Lato', sans-serif;
+    box-sizing:border-box;
+    text-shadow:2px 2px #000;
+}
+.credits{
+    width:100%;
+    color:#fff;
+    background-color:#171d1c;
+    font-family:'Lato', sans-serif;
+    box-sizing:border-box;
+    text-shadow:2px 2px #000;
+    padding:3px 0px;
+    text-align:center;
+    font-size:12px;
+    border-top: 1px solid #fff;
+}
+footer ul{
+    list-style:none;
+    padding:0px 20px 0px 0px;
+    margin:0px;
+    flex-shrink:0;
+}
+
+footer a, .credits a{
+    text-decoration:none;
+    color:#fff;
+    padding:5px 0px;
+    transition:all 0.3s;
+}
+footer a:hover, .credits a:hover{
+    color:#20aaaa;
+    text-decoration:underline;
+}
+.grow{
+    flex-grow:1;
+}
+footer p{
+    text-align:right;
+    flex-shrink:0;
+    margin-top:60px;
+}
+.destinations{
+	display:flex;
+}
+.ft-list-m{
+	display:none;
+}
+.ft-list-pc{
+	display:block;
+	position:relative;
+	left:-50px;
+}
+
+/*Media Tablet*/
+@media(max-width:1000px){
+    .message-box{
+        right:100px;
+    }
+    
+    footer p{
+        text-align:left;
+    }
+	.ft-list-m{
+		display:none;
+	}
+	.ft-list-pc{
+		display:block;
+	}
+}
+
+/*Media Mobile*/
+@media(max-width:670px){
+    .message-bg{
+        height:450px;
+        width:100%;
+    }
+    .message-box{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    footer{
+        flex-direction:column;
+        justify-content:normal;
+        padding:10px;
+    }
+    footer ul{
+        padding:0px 0px 20px;
+        width:100%;
+        margin:auto;
+        text-align:center;
+        font-size:32px;
+        border-bottom:1px solid #fff;
+    }
+    footer p{
+        text-align:center;
+        font-size:32px;
+    }
+    footer a, .credits a{
+        display:block;
+    	width:100%;
+    }
+    footer a:hover, .credits a:hover{
+        color:#fff;
+        width:100%;
+    	background-color:#20aaaa;
+    }
+    .credits{
+        font-size:20px;
+    }
+
+	.ft-list-pc{
+		display:none;
+	}
+	.ft-list-m{
+		display:block;
+	}
 }
