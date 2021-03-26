@@ -1,0 +1,72 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #E8E8E8;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  width: 550px;
+  height: 250px;
+  margin: 20px;
+  background-color: white;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+.photo {
+  float: left;
+  width: 50%;
+}
+
+.photo img {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.info h1 {
+  margin-top: 10px;
+  margin-bottom: 0;
+  font-family: 'Open Sans';
+  font-weight: 400;
+}
+
+.info p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+ul li {
+  float: left;
+  list-style: none;
+  padding-right: 25px;
+}
+  
+.button {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 1px;
+  background:	#FF1493;
+  border-radius: 100px;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.button:hover { 
+  background: #C71585;
+}
+
+/* Active state animation applied here */
+.button:active {
+  -webkit-animation: active 1200ms ease 1 alternate;
+  animation: active 1200ms ease 1 alternate; 
+  background: #FF1493;
+}
+
